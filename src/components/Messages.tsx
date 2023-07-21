@@ -63,7 +63,7 @@ function Messages() {
     >
       {messages.map(m => {
         return m.sender.self ? (
-          <Flex key={m.id} gap={2} w={'90%'} ml={'auto'} my={4} alignSelf={"end"}>
+          <Flex key={m.id} gap={2} w={'90%'} ml={'auto'} my={4} alignSelf={"end"} justifyContent={'flex-end'}>
             <Box w={48} display={'inline'} />
             <Box bg={'#1C63D5'} color={'white'} p={2} borderRadius={12} borderTopRightRadius={0} >
               {m.message}
